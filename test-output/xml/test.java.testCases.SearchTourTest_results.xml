@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="14,856">
+           time="10,831">
   <properties />
   
   
-            <testcase name="openNewsRegionTest" time="14,856" classname="test.java.testCases.SearchTourTest" />
+            <testcase name="openNewsRegionTest" time="10,831" classname="test.java.testCases.SearchTourTest" />
       
 </testsuite>
