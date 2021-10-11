@@ -15,7 +15,7 @@ public class MainPage extends BasePageObject {
     By buttonAuthorization = By.id("t-comp14-textEl");
     By searchTour = By.xpath("//div[@class='TVSearchButton']");
     By departureFrom = By.xpath("//div[contains(@class,'TVLocationButton')]");
-    By choosingACityDeparture = By.xpath("//div[text()='С.Петербург']");
+    By choosingACityDeparture = By.xpath("(//div[contains(@class,'TVItemBold')])[2]");
     By placeOfArrival = By.xpath("//div[contains(@class,'TVCountry')]");
     By choosingACountryArrival = By.xpath("//div[text()='Абхазия']");
 
@@ -135,8 +135,8 @@ public class MainPage extends BasePageObject {
 
         this.clickDepartureFrom();
         this.clickChoosingACity();
-        this.clickPlaceOfArrival();
-        this.clickСhoosingACountryArrival();
-        this.clickSearchTour();
+//        this.clickPlaceOfArrival();
+//        this.clickСhoosingACountryArrival();
+//        this.clickSearchTour();
     }
 }
