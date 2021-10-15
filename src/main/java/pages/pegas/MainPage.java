@@ -17,8 +17,10 @@ public class MainPage extends BasePageObject {
     By departureFrom = By.xpath("//div[contains(@class,'TVLocationButton')]");
     By choosingACityDeparture = By.xpath("(//div[contains(@class,'TVItemBold')])[2]");
     By placeOfArrival = By.xpath("//div[contains(@class,'TVCountry')]");
-    By choosingACountryArrival = By.xpath("(//div[@class='TVCountryCheckboxName'])[1]");
+    By choosingACountryArrival1 = By.xpath("(//div[@class='TVCountryCheckboxName'])[1]");
     By byeATour = By.xpath("(//a[@href='https://pegastk.com/pay/'])[1]");
+    By choosingACountryArrival2 = By.xpath("(//div[@class='TVCountryCheckboxName'])[2]");
+
 
     public MainPage(WebDriver driver) {
 
@@ -47,14 +49,18 @@ public class MainPage extends BasePageObject {
         return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.placeOfArrival));
     }
 
-    public WebElement getChoosingACountryArrival() {
+    public WebElement getChoosingACountryArrival1() {
 
-        return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.choosingACountryArrival));
+        return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.choosingACountryArrival1));
     }
 
     public WebElement getByeATour() {
 
         return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.byeATour));
+    }
+    public WebElement getChoosingACountryArrival2() {
+
+        return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.choosingACountryArrival2));
     }
 
 
@@ -98,16 +104,22 @@ public class MainPage extends BasePageObject {
         System.out.println("Click on an Place Of Arrival");
     }
 
-    public void clickСhoosingACountryArrival() {
+    public void clickСhoosingACountryArrival1() {
 
-        this.getChoosingACountryArrival().click();
-        System.out.println("Click on an Сhoosing A City Arrival Country");
+        this.getChoosingACountryArrival1().click();
+        System.out.println("Click on an Сhoosing A City Arrival Country1");
     }
 
     public void clickByeATour() {
 
         this.getByeATour().click();
         System.out.println("Click on an Bye a Tour");
+    }
+
+    public void clickСhoosingACountryArrival2() {
+
+        this.getChoosingACountryArrival2().click();
+        System.out.println("Click on an Сhoosing A City Arrival Country2");
     }
 
 
@@ -144,12 +156,21 @@ public class MainPage extends BasePageObject {
 //        this.clickButtonAuthorization();
 //        return new LendingIntroPage(this.driver);
 //    }
-    public void searchTour(){
+    public void searchTour1(){
 
         this.clickDepartureFrom();
         this.clickChoosingACity();
         this.clickPlaceOfArrival();
-        this.clickСhoosingACountryArrival();
+        this.clickСhoosingACountryArrival1();
+        this.clickSearchTour();
+    }
+
+    public void searchTour2(){
+
+        this.clickDepartureFrom();
+        this.clickChoosingACity();
+        this.clickPlaceOfArrival();
+        this.clickСhoosingACountryArrival2();
         this.clickSearchTour();
     }
 

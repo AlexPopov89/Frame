@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="openNewsRegionTest" time="8,646" classname="test.java.testCases.SearchTourTest" />
+            <testcase name="openNewsRegionTest" time="8,646" classname="test.java.testCases.SearchTourTest1" />
       
 </testsuite>
