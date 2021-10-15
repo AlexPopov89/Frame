@@ -23,12 +23,12 @@ public class BaseTest {
 
     }
 
-//    @AfterTest
-//    public void methodTearDown(){
-//        System.out.println("Method tear down");
-//        driver.quit();
-//
-//    }
+    @AfterTest
+    public void methodTearDown(){
+        System.out.println("Method tear down");
+        driver.quit();
+
+    }
 
     public static class RunTestAgain implements IRetryAnalyzer {
         private int nowCount=0;
