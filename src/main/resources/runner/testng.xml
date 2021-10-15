@@ -9,16 +9,20 @@
     </listeners>
 
 
-    <test name="AllTest">
+    <test name="AllTest1">
         <parameter name="browser" value="chrome" />
         <classes>
              <class name="test.java.testCases.SearchTourTest" />
-<!--            <class name="test.java.testCases.AddClientFlTest" />-->
-            <!-- <class name="test.java.testCases.AddApplicationDepositTest" />-->
-            <!-- <class name="test.java.testCases.AddLeadSalaryProjectTest" />-->
-            <!-- <class name="test.java.testCases.CopyAndDeleteLeadTest" />-->
-            <!-- <class name="test.java.testCases.CopyAndDeleteApplicationTest" />-->
-            <!-- <class name="test.java.testCases.AddServiceOfficesTest" />-->
+<!--             <class name="test.java.testCases.ByeATourTest" />-->
+
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="AllTest2">
+        <parameter name="browser" value="chrome" />
+        <classes>
+<!--            <class name="test.java.testCases.SearchTourTest" />-->
+            <class name="test.java.testCases.ByeATourTest" />
         </classes>
     </test> <!-- Test -->
 

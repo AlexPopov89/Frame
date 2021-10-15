@@ -18,6 +18,7 @@ public class MainPage extends BasePageObject {
     By choosingACityDeparture = By.xpath("(//div[contains(@class,'TVItemBold')])[2]");
     By placeOfArrival = By.xpath("//div[contains(@class,'TVCountry')]");
     By choosingACountryArrival = By.xpath("//div[text()='Абхазия']");
+    By byeATour = By.xpath("(//a[@href='https://pegastk.com/pay/'])[1]");
 
     public MainPage(WebDriver driver) {
 
@@ -49,6 +50,11 @@ public class MainPage extends BasePageObject {
     public WebElement getChoosingACountryArrival() {
 
         return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.choosingACountryArrival));
+    }
+
+    public WebElement getByeATour() {
+
+        return new WebDriverWait(this.driver, 30).until(ExpectedConditions.elementToBeClickable(this.byeATour));
     }
 
 
@@ -98,6 +104,13 @@ public class MainPage extends BasePageObject {
         System.out.println("Click on an Сhoosing A City Arrival Country");
     }
 
+    public void clickByeATour() {
+
+        this.getByeATour().click();
+        System.out.println("Click on an Bye a Tour");
+    }
+
+
 
 //    public void inputLogin(String login) {
 //
@@ -135,8 +148,15 @@ public class MainPage extends BasePageObject {
 
         this.clickDepartureFrom();
         this.clickChoosingACity();
-//        this.clickPlaceOfArrival();
-//        this.clickСhoosingACountryArrival();
-//        this.clickSearchTour();
+        this.clickPlaceOfArrival();
+        this.clickСhoosingACountryArrival();
+        this.clickSearchTour();
     }
+
+    public ByeATourPage bueTour(){
+
+        this.clickByeATour();
+        return new ByeATourPage(this.driver);
+    }
+
 }

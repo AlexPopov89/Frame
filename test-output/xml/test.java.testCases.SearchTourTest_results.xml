@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AllTest"
+<testsuite name="AllTest1"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="9,947">
+           time="7,372">
   <properties />
   
   
-            <testcase name="openNewsRegionTest" time="9,947" classname="test.java.testCases.SearchTourTest" />
+            <testcase name="openNewsRegionTest" time="7,372" classname="test.java.testCases.SearchTourTest" />
       
 </testsuite>
