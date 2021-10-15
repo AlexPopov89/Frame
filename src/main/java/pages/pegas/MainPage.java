@@ -17,7 +17,7 @@ public class MainPage extends BasePageObject {
     By departureFrom = By.xpath("//div[contains(@class,'TVLocationButton')]");
     By choosingACityDeparture = By.xpath("(//div[contains(@class,'TVItemBold')])[2]");
     By placeOfArrival = By.xpath("//div[contains(@class,'TVCountry')]");
-    By choosingACountryArrival = By.xpath("//div[text()='Абхазия']");
+    By choosingACountryArrival = By.xpath("(//div[@class='TVCountryCheckboxName'])[1]");
     By byeATour = By.xpath("(//a[@href='https://pegastk.com/pay/'])[1]");
 
     public MainPage(WebDriver driver) {

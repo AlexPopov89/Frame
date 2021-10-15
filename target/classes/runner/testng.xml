@@ -22,7 +22,7 @@
         <parameter name="browser" value="chrome" />
         <classes>
 <!--            <class name="test.java.testCases.SearchTourTest" />-->
-            <class name="test.java.testCases.ByeATourTest" />
+<!--            <class name="test.java.testCases.ByeATourTest" />-->
         </classes>
     </test> <!-- Test -->
 
