@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BrowserFactory {
 
@@ -9,8 +10,13 @@ public class BrowserFactory {
         WebDriver driver = null;
         switch (browser){
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Acer\\IdeaProjects\\Frame\\chromedriver.exe");
-                driver = new ChromeDriver();
+                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.setHeadless(true);
+                driver = new ChromeDriver(options);
+                System.out.println("Title of the page : " + driver.getTitle());
+//                System.out.println("URL of the page : " + driver.getCurrentUrl());
                 break;
 
             default:
