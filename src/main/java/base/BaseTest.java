@@ -8,17 +8,23 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import java.util.logging.Logger;
+
+
 public class BaseTest {
 
     public WebDriver driver;
+    public Logger logger;
 
 
     @Parameters({"browser"})
     @BeforeTest
     public void methodSetUp(String browser){
+        logger = Logger.getLogger("new logger");
         System.out.println("Method set up");
         this.driver = new BrowserFactory().getDriver(browser);
         System.out.println("BaseTest " + this.driver);
+
 
 
     }
