@@ -12,7 +12,7 @@
     <test name="AllTest1">
         <parameter name="browser" value="chrome" />
         <classes>
-<!--             <class name="test.java.testCases.SearchTourTest1" />-->
+             <class name="test.java.testCases.SearchTourTest1" />
         </classes>
     </test> <!-- Test -->
 
@@ -33,7 +33,7 @@
     <test name="AllTest4">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="test.java.testCases.ByeATourTest" />
+<!--            <class name="test.java.testCases.ByeATourTest" />-->
         </classes>
     </test> <!-- Test -->
 

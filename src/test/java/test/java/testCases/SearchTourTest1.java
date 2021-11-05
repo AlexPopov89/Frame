@@ -1,8 +1,10 @@
 package test.java.testCases;
 
 import base.BaseTest;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import pages.pegas.MainPage;
+
 
 public class SearchTourTest1 extends BaseTest {
 

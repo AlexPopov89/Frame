@@ -6,8 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import tools.Log;
 
 public class MainPage extends BasePageObject {
+
 
     //Locators
     By login = By.id("loginEdit-el");
@@ -28,6 +30,9 @@ public class MainPage extends BasePageObject {
         super(driver);
         this.driver.get("https://pegastk.com/");
     }
+
+
+
 
     // Getters:
     public WebElement getSearchTour() {

@@ -11,7 +11,7 @@ public class SberPage extends BasePageObject {
 
     //Locators
 
-    By payButton = By.xpath("//span[@langlbl='pay1']");
+    By payButton = By.xpath("//span[@langlbl='pay']");
 
     public SberPage(WebDriver driver) {
 
