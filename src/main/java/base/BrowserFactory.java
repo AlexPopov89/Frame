@@ -13,7 +13,7 @@ public class BrowserFactory {
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless");
-                options.setHeadless(true);
+                options.setHeadless(false);
                 driver = new ChromeDriver(options);
                 System.out.println("Title of the page : " + driver.getTitle());
 //                System.out.println("URL of the page : " + driver.getCurrentUrl());

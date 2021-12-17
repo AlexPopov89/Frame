@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="AllTestSuite" verbose="1" parallel="tests" thread-count="1">
 
-    <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-        <!--       <listener class-name="main.java.listeners.CustomListeners"/>-->
-    </listeners>
+<!--    <listeners>-->
+<!--        <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+<!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
+<!--        &lt;!&ndash;       <listener class-name="main.java.listeners.CustomListeners"/>&ndash;&gt;s-->
+<!--    </listeners>-->
 
 
     <test name="AllTest1">

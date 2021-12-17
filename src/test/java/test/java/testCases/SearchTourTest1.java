@@ -14,18 +14,5 @@ public class SearchTourTest1 extends BaseTest {
         MainPage mp = new MainPage(this.driver);
         mp.searchTour1();
 
-//        LendingIntroPage lip = ap.login("TestUser23","TestUser23");
-//        Assert.assertNotNull(lip.getProfileUserButton());
-
-
-
-
-
-
-
-
-
-
-
     }
 }
